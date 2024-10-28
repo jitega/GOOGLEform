@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Create</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 20px;
+            border-radius: 8px;
+            background: linear-gradient(to bottom, #d7e1a2, #e8c2c2);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        label, input[type="submit"], input[type="reset"] {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="me">
+        <form>
+            <h2>Create your Account</h2>
+            
+            <label for="name">Name</label>
+            <input type="text" name="myName" id="name">
+            <br>
+            <label for="mob">Mobile Number</label>
+            <input type="number" name="myMobile_number" id="mob">
+            <br>
+            <label for="mail">Email</label>
+            <input type="email" name="myEmail" id="mail" class="mel">
+            <br>
+            <label for="area">Location</label>
+            <input type="text" name="myLocation" id="area">
+            <br>
+            <label for="pin">Pin code</label>
+            <input type="text" name="mypin_code" id="pin">
+            <br>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </form>
+    </div>
+</body>
+</html>
